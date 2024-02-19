@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+.header-title {
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+}
+.header-title h1 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 1rem;
+}
+.header-title p {
+  margin-bottom: 4rem;
+}
+.unknown {
+  background-color: black;
+  color: white;
+  padding: 0.3rem;
+}
+/* SECTION ONE END */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  height: fit-content;
+}
+.main-container-section1 {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1px 1px 5px 1px rgb(157, 157, 157),
+    1px 1px 5px 1px rgb(157, 157, 157);
+}
+.main-section-pic img {
+  width: 100%;
+  overflow: hidden;
+}
+.main-section h3,
+h5 {
+  padding: 1rem;
+}
+.main-section p {
+  font-size: medium;
+  padding: 0 0.2rem 1.5rem 1rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+}
+.main-section button {
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.5px solid rgb(213, 207, 207);
+  background-color: rgb(218, 230, 241);
+  box-shadow: 0.2px 0.2px 0.2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.main-section button:hover {
+  background-color: rgb(176, 171, 171);
+}
+.main-section-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.zero {
+  padding: 1px 5px;
+  margin-left: 0.5rem;
+  color: white;
+  background-color: black;
+}
+.comments {
+  text-align: right;
+  margin-right: 1rem;
+}
+.two {
+  min-height: 100px;
+  box-shadow: -1px 1px 5px 1px rgb(157, 157, 157),
+    1px 1px 5px 1px rgb(157, 157, 157);
+  margin: 3rem 0;
+}
+.second-comment {
+  border-radius: 50%;
+  padding: 1px 7px;
+}
+/* End of section two */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+.sidebar-section1 {
+  box-shadow: -1px 1px 5px 1px rgb(157, 157, 157),
+    1px 1px 5px 1px rgb(157, 157, 157);
+}
+.sidebar-pic img {
+  width: 100%;
+  overflow: hidden;
+}
+.sidebar p {
+  font-size: medium;
+  padding: 0 0.2rem 1.5rem 1rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+}
+.sidebar h3 {
+  padding: 1rem;
+}
+/* End of first sidebar */
+.sidebar-section2 {
+  margin: 3rem 0 2rem 0;
+  box-shadow: -1px 1px 5px 1px rgb(157, 157, 157),
+    1px 1px 5px 1px rgb(157, 157, 157);
+}
+.sidebar-section2-title h3 {
+  background-color: #f1f1f1;
+  font-family: "Raleway", sans-serif;
+  padding: 1.5rem 0 1.5rem 1rem;
+  font-size: 25px;
+  font-weight: lighter;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+.list1 {
+  float: left;
+}
+.first-level {
+  padding: 1rem;
+  list-style-type: none;
+}
+.span-title {
+  padding: 0 0 0 1rem;
+  font-weight: lighter;
+  line-height: 5px;
+}
+.horizantal-line {
+  background-color: #f1f1f1;
+  opacity: 0.3;
+}
+.last1 {
+  margin: 1rem;
+}
+/* End of seccond sidebard */
+ul li {
+  list-style-type: none;
+  padding: 0.2rem 0.7rem;
+  margin: 0.5rem 0.1rem;
+}
+.third-sidebard ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.third-section-list {
+  background: #f1f1f1;
+  display: inline-block;
+}
+.third-sidebard {
+  padding: 1rem;
+}
+.first-word {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.third-section {
+  margin-top: 1rem;
+}
+.main-footer {
+  height: 200px;
+  width: 100%;
+  background-color: #616161 !important;
+}
+.footer-btn {
+  padding: 1rem 1.5rem;
+  background-color: black;
+  color: white;
+  margin-top: 3rem;
+  font-size: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.footer-btn:hover {
+  background-color: white;
+  color: black;
+}
+.first-btn {
+  margin-left: 1rem;
+  background-color: rgb(65, 64, 64) !important;
+  color: #fff !important;
+  opacity: 0.5;
+}
+.first-btn:hover {
+  background-color: rgb(126, 125, 125) !important;
+  color: #fff !important;
+}
+.footer-paragraph {
+  margin: 2rem 1rem;
+  color: #fff;
+  font-size: 18px;
+}
+@media (max-width: 414px) {
+  .main-container-section1 {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+  }
+}
