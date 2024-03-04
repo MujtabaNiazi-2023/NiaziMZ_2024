@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /* Page body styles */
 body,
 a,
@@ -13,27 +14,33 @@ ul {
   text-decoration: none;
   list-style-type: none;
 }
+
 body {
   background-color: rgb(238, 238, 238);
 }
+
 /* Navigation styles start here */
 .navbar {
   width: 100%;
   background-color: black;
   color: white;
 }
+
 .navbar i {
   cursor: pointer;
   padding: 0.5rem;
   font-size: larger;
 }
+
 .navbar :nth-child(7) {
   float: right;
 }
+
 .navbar i:hover {
   background-color: rgb(238, 238, 238);
   color: black;
 }
+
 /* main-container-styles start here */
 .main-container {
   display: flex;
@@ -42,8 +49,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
+
 .header-section {
   text-align: center;
 }
@@ -61,11 +68,13 @@ body {
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
 }
+
 .header-image {
   width: 100%;
   z-index: -1;
   margin-top: -6rem;
 }
+
 .header-wrapper {
   position: relative;
   top: 10rem;
@@ -76,43 +85,43 @@ body {
   min-width: 16rem;
   text-align: left;
 }
-.header-wrapper :nth-child(2) {
-  font-family: "oswald", sans-serif;
+.header-wrapper:nth-child(2) {
+  font-family: "Oswald", sans-serif;
   font-size: 3rem;
   font-weight: bold;
 }
-.header-wrapper :nth-child(1) {
-  font-family: "oswald", sans-serif;
+.header-wrapper:nth-child(1) {
+  font-family: "Oswald", sans-serif;
   font-size: 2rem;
 }
-.header-wrapper :nth-child(3) {
+.header-wrapper:nth-child(3) {
   padding: 0.7rem 1rem;
   background-color: #ffffff;
   opacity: 0.5;
   color: black;
   cursor: pointer;
 }
+
 .link-btn {
   margin-bottom: 1rem;
 }
+
 .wrapper-button:hover {
   background-color: white;
   color: black;
   opacity: 0.7;
 }
+
 /* end of header styles */
 .container-part2 {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1rem;
-  margin: 0 1rem;
+  margin: 0 auto;
 }
+
 .container-wrapper {
   background-color: white;
-}
-.wrapper-pic1 {
-  padding: 1rem;
-  width: 100%;
 }
 .container-wrapper p {
   font-size: medium;
@@ -137,6 +146,17 @@ body {
   outline: none;
   font-size: 1rem;
 }
+.container-wrapper button:hover {
+  cursor: pointer;
+  background-color: rgb(204, 201, 201);
+  color: black;
+}
+
+.wrapper-pic1 {
+  padding: 1rem;
+  width: 100%;
+}
+
 .wrapper-btn2 {
   float: right;
   background-color: black;
@@ -151,42 +171,42 @@ body {
   margin: 0 0 0 0.5rem;
   font-size: medium;
 }
-.container-wrapper button:hover {
-  cursor: pointer;
-  background-color: rgb(204, 201, 201);
-  color: black;
-}
+
 .wrapper-subdiv {
   border-top: 1px solid rgb(228, 223, 223);
   margin-top: 3rem;
-}
-.wrapper-subdiv ul li {
-  background-color: white;
 }
 .wrapper-subdiv img {
   margin: 1rem 4rem 1rem 0;
   width: 10%;
   float: left;
 }
+.wrapper-subdiv ul li {
+  background-color: white;
+}
+.wrapper-subdiv:nth-child(3) {
+  margin-bottom: 2rem;
+}
+
 .wrapper-list1 {
   padding: 1rem 0;
   margin-top: 1rem;
 }
+
 li span {
   font-weight: bold;
 }
-.wrapper-subdiv :nth-child(3) {
-  margin-bottom: 2rem;
-}
+
 /* end of container-first-part  */
 .second-container {
   grid-area: 3/1/4/2;
 }
+
 .third-container {
   grid-area: 5/1/6/2;
 }
-/* --------- End of column one styles ------------ */
 
+/* --------- End of column one styles ------------ */
 .sidebar-section1 {
   background: url(images/avatar_girl2.jpg) no-repeat center;
   background-size: cover;
@@ -203,70 +223,80 @@ li span {
   padding: 1rem;
 }
 .sidebar-section1 p,
-#sidebar1-title {
+.sidebar-section1 #sidebar1-title {
   position: relative;
   top: 14rem;
 }
+
 /* -----------------End of first section of sidebar ----------------*/
 .sidebar-part2 {
   margin-top: 3rem;
   background-color: white;
 }
+
 .popular-post {
   background-color: black;
   color: white;
   padding: 1rem;
 }
+
 .firstbar ul li {
   background-color: white;
+}
+
+.first-level {
+  padding: 1rem 0;
+  border-top: 1px solid rgb(236, 233, 233);
 }
 .first-level img {
   float: left;
   width: 5%;
   margin-left: 1rem;
 }
-.first-level {
-  padding: 1rem 0;
-  border-top: 1px solid rgb(236, 233, 233);
-}
 .first-level:hover {
   background-color: rgb(200, 199, 199);
-}
-.first--level {
-  border: none;
-  vertical-align: center;
 }
 .first-level span {
   padding: 0 0 0 1rem;
   font-weight: lighter;
   line-height: 5px;
 }
+
+.first--level {
+  border: none;
+  vertical-align: center;
+}
+
 /* ---------------- End of popular post styles -----------------*/
 .advertise-container {
   margin: 3rem 0;
   background-color: white;
   border: 1px solid white;
 }
-.advertise {
-  background-color: black;
-  color: white;
-  padding: 1rem;
-}
-.advertise-container :nth-child(2) {
+.advertise-container:nth-child(2) {
   background-color: rgb(238, 238, 238);
   margin: 1rem;
   padding: 6rem 10rem;
   text-align: center;
 }
+
+.advertise {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
 /* ---------------- end of advertise ------------------ */
 .sidebar-tags {
   background-color: white;
 }
+
 .sidebar-tags-title {
   background-color: black;
   color: white;
   padding: 1rem;
 }
+
 ul li {
   list-style-type: none;
   padding: 0.1rem 0.7rem;
@@ -274,27 +304,32 @@ ul li {
   background-color: rgb(238, 238, 238);
   font-size: small;
 }
+
+.sidebar-tags-list {
+  padding: 1rem;
+}
 .sidebar-tags-list ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.sidebar-tags-list {
-  padding: 1rem;
-}
+
 .first-word {
   background-color: black;
   color: white;
   font-size: medium;
   font-weight: lighter;
 }
+
 .container-sidebar {
   grid-area: 7/1/8/2;
 }
+
 /* end of sidebar column 2 row first */
 .container-2ndsidebar {
   grid-area: 9/1/10/2;
 }
+
 .sidebar-pic-gallery {
   margin-top: 1rem;
   background-color: white;
@@ -302,6 +337,7 @@ ul li {
 .sidebar-pic-gallery img {
   width: 45%;
 }
+
 .sidebar-gallery {
   display: flex;
   flex-direction: row;
@@ -309,42 +345,50 @@ ul li {
   gap: 1rem;
   justify-content: center;
 }
+
 .gallery-title {
   background-color: black;
   color: white;
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
 /* End of gallery */
 .sidebar-links {
   background-color: white;
   margin: 2rem 0;
 }
+
 .links-title {
   background-color: black;
   color: white;
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
 .links-icon {
   padding: 0 1rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
+
 .fa-brands:hover {
   opacity: 0.5;
 }
+
 /* end of links */
 .sidebar-subscribe {
   background-color: white;
   margin: 2rem 0;
 }
+
 .subscribe-title {
   background-color: black;
   color: white;
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
 .subscribe-details {
   padding: 0 1rem;
   text-align: center;
@@ -371,6 +415,7 @@ ul li {
   outline: none;
   width: 100%;
 }
+
 /* end of subscribe */
 .footer {
   height: 10rem;
@@ -386,21 +431,21 @@ ul li {
   font-size: 1rem;
   font-weight: bolder;
 }
-.footer-icon {
-  padding-right: 1rem;
-  font-weight: bolder;
-}
 .footer p {
   margin: 0 0 2rem 2rem;
   color: black;
 }
+
+.footer-icon {
+  padding-right: 1rem;
+  font-weight: bolder;
+}
+
 .footer-link {
   color: black;
   text-decoration: underline;
 }
-.footer-btn-link {
-  color: white;
-}
+
 /* end of footer */
 /* page responsive part */
 @media (min-width: 50rem) {
@@ -438,4 +483,4 @@ ul li {
   .sidebar-subscribe {
     margin: 1rem 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */

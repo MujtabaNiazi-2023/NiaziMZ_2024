@@ -1,3 +1,11 @@
+$font-color: white;
+$bk-color: red;
+$first-font-family: "Oswald", sans-serif;
+
+$font-lg: 3rem;
+$font-md: 2rem;
+$font-sm: 1rem;
+
 /* Page overall styles */
 * {
   padding: 0;
@@ -19,8 +27,8 @@ body {
 /* Navigation styles start here */
 .navbar {
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
 }
 .navbar i {
   cursor: pointer;
@@ -32,7 +40,7 @@ body {
 }
 .navbar i:hover {
   background-color: rgb(238, 238, 238);
-  color: black;
+  color: $bk-color;
 }
 /* main-container-styles start here */
 .main-container {
@@ -42,24 +50,24 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
 }
 .header-section {
   text-align: center;
-}
-.header-section span {
-  background-color: black;
-  color: white;
-}
-.header-section h2 {
-  margin-top: 5rem;
-  font-size: 3rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-}
-.header-section p {
-  font-size: 1rem;
-  font-family: "Oswald", sans-serif;
+  span {
+    background-color: $bk-color;
+    color: $font-color;
+  }
+  h2 {
+    margin-top: 5rem;
+    font-size: $font-lg;
+    font-family: $first-font-family;
+    font-weight: 500;
+  }
+  p {
+    font-size: $font-sm;
+    font-family: $first-font-family;
+  }
 }
 .header-image {
   width: 100%;
@@ -72,32 +80,33 @@ body {
   left: 1rem;
   z-index: 22;
   background: transparent;
-  color: white;
+  color: $font-color;
   min-width: 16rem;
   text-align: left;
+  &:nth-child(2) {
+    font-family: $first-font-family;
+    font-size: $font-lg;
+    font-weight: bold;
+  }
+  &:nth-child(1) {
+    font-family: $first-font-family;
+    font-size: $font-md;
+  }
+  &:nth-child(3) {
+    padding: 0.7rem 1rem;
+    background-color: #ffffff;
+    opacity: 0.5;
+    color: $bk-color;
+    cursor: pointer;
+  }
 }
-.header-wrapper :nth-child(2) {
-  font-family: "oswald", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.header-wrapper :nth-child(1) {
-  font-family: "oswald", sans-serif;
-  font-size: 2rem;
-}
-.header-wrapper :nth-child(3) {
-  padding: 0.7rem 1rem;
-  background-color: #ffffff;
-  opacity: 0.5;
-  color: black;
-  cursor: pointer;
-}
+
 .link-btn {
   margin-bottom: 1rem;
 }
 .wrapper-button:hover {
-  background-color: white;
-  color: black;
+  background-color: $font-color;
+  color: $bk-color;
   opacity: 0.7;
 }
 /* end of header styles */
@@ -108,66 +117,71 @@ body {
   margin: 0 1rem;
 }
 .container-wrapper {
-  background-color: white;
+  background-color: $font-color;
+  p {
+    font-size: medium;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+  h3 {
+    padding: 1rem 0;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    outline: none;
+    font-size: 1rem;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(204, 201, 201);
+    color: $bk-color;
+  }
 }
 .wrapper-pic1 {
   padding: 1rem;
   width: 100%;
 }
-.container-wrapper p {
-  font-size: medium;
-  padding: 1rem;
-  line-height: 1.5rem;
-  text-align: justify;
-}
-.container-wrapper h3 {
-  padding: 1rem 0;
-  font-variant: small-caps;
-  text-align: center;
-  font-size: 1.5rem;
-}
-.container-wrapper h5 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: lighter;
-}
-.container-wrapper button {
-  padding: 0.5rem 1rem;
-  margin-left: 1rem;
-  outline: none;
-  font-size: 1rem;
-}
 .wrapper-btn2 {
   float: right;
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 0.5rem 1rem;
   margin: 0 1rem;
+  span {
+    color: $bk-color;
+    background-color: $font-color;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0 0 0.5rem;
+    font-size: medium;
+  }
 }
-.wrapper-btn2 span {
-  color: black;
-  background-color: white;
-  padding: 0.2rem 0.5rem;
-  margin: 0 0 0 0.5rem;
-  font-size: medium;
-}
-.container-wrapper button:hover {
-  cursor: pointer;
-  background-color: rgb(204, 201, 201);
-  color: black;
-}
+
 .wrapper-subdiv {
   border-top: 1px solid rgb(228, 223, 223);
   margin-top: 3rem;
+  img {
+    margin: 1rem 4rem 1rem 0;
+    width: 10%;
+    float: left;
+  }
+  ul li {
+    background-color: $font-color;
+  }
+  &:nth-child(3) {
+    margin-bottom: 2rem;
+  }
 }
-.wrapper-subdiv ul li {
-  background-color: white;
-}
-.wrapper-subdiv img {
-  margin: 1rem 4rem 1rem 0;
-  width: 10%;
-  float: left;
-}
+
 .wrapper-list1 {
   padding: 1rem 0;
   margin-top: 1rem;
@@ -175,9 +189,7 @@ body {
 li span {
   font-weight: bold;
 }
-.wrapper-subdiv :nth-child(3) {
-  margin-bottom: 2rem;
-}
+
 /* end of container-first-part  */
 .second-container {
   grid-area: 3/1/4/2;
@@ -191,80 +203,86 @@ li span {
   background: url(images/avatar_girl2.jpg) no-repeat center;
   background-size: cover;
   min-height: 24rem;
-  color: white;
+  color: $font-color;
+
+  p {
+    font-size: medium;
+    padding: 0 0.2rem 1.5rem 1rem;
+    line-height: 1.3rem;
+    font-weight: lighter;
+  }
+  h3 {
+    padding: 1rem;
+  }
+  p,
+  #sidebar1-title {
+    position: relative;
+    top: 14rem;
+  }
 }
-.sidebar-section1 p {
-  font-size: medium;
-  padding: 0 0.2rem 1.5rem 1rem;
-  line-height: 1.3rem;
-  font-weight: lighter;
-}
-.sidebar-section1 h3 {
-  padding: 1rem;
-}
-.sidebar-section1 p,
-#sidebar1-title {
-  position: relative;
-  top: 14rem;
-}
+
 /* -----------------End of first section of sidebar ----------------*/
 .sidebar-part2 {
   margin-top: 3rem;
-  background-color: white;
+  background-color: $font-color;
 }
 .popular-post {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 1rem;
 }
 .firstbar ul li {
-  background-color: white;
+  background-color: $font-color;
 }
-.first-level img {
-  float: left;
-  width: 5%;
-  margin-left: 1rem;
-}
+
 .first-level {
   padding: 1rem 0;
   border-top: 1px solid rgb(236, 233, 233);
+  img {
+    float: left;
+    width: 5%;
+    margin-left: 1rem;
+  }
+  &:hover {
+    background-color: rgb(200, 199, 199);
+  }
+  span {
+    padding: 0 0 0 1rem;
+    font-weight: lighter;
+    line-height: 5px;
+  }
 }
-.first-level:hover {
-  background-color: rgb(200, 199, 199);
-}
+
 .first--level {
   border: none;
   vertical-align: center;
 }
-.first-level span {
-  padding: 0 0 0 1rem;
-  font-weight: lighter;
-  line-height: 5px;
-}
+
 /* ---------------- End of popular post styles -----------------*/
 .advertise-container {
   margin: 3rem 0;
-  background-color: white;
-  border: 1px solid white;
+  background-color: $font-color;
+  border: 1px solid $font-color;
+  &:nth-child(2) {
+    background-color: rgb(238, 238, 238);
+    margin: 1rem;
+    padding: 6rem 10rem;
+    text-align: center;
+  }
 }
 .advertise {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 1rem;
 }
-.advertise-container :nth-child(2) {
-  background-color: rgb(238, 238, 238);
-  margin: 1rem;
-  padding: 6rem 10rem;
-  text-align: center;
-}
+
 /* ---------------- end of advertise ------------------ */
 .sidebar-tags {
-  background-color: white;
+  background-color: $font-color;
 }
 .sidebar-tags-title {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 1rem;
 }
 ul li {
@@ -274,17 +292,18 @@ ul li {
   background-color: rgb(238, 238, 238);
   font-size: small;
 }
-.sidebar-tags-list ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 .sidebar-tags-list {
   padding: 1rem;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .first-word {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   font-size: medium;
   font-weight: lighter;
 }
@@ -297,10 +316,10 @@ ul li {
 }
 .sidebar-pic-gallery {
   margin-top: 1rem;
-  background-color: white;
-}
-.sidebar-pic-gallery img {
-  width: 45%;
+  background-color: $font-color;
+  img {
+    width: 45%;
+  }
 }
 .sidebar-gallery {
   display: flex;
@@ -310,19 +329,19 @@ ul li {
   justify-content: center;
 }
 .gallery-title {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 /* End of gallery */
 .sidebar-links {
-  background-color: white;
+  background-color: $font-color;
   margin: 2rem 0;
 }
 .links-title {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -336,70 +355,72 @@ ul li {
 }
 /* end of links */
 .sidebar-subscribe {
-  background-color: white;
+  background-color: $font-color;
   margin: 2rem 0;
 }
 .subscribe-title {
-  background-color: black;
-  color: white;
+  background-color: $bk-color;
+  color: $font-color;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .subscribe-details {
   padding: 0 1rem;
   text-align: center;
-}
-.subscribe-details p {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  text-align: left;
-}
-.subscribe-details button {
-  padding: 0.5rem;
-  margin: 1rem 0;
-  background-color: red;
-  color: white;
-  font-size: 1rem;
-  width: 100%;
-  outline: none;
-  border: none;
-}
-.subscribe-details input {
-  font-size: 1rem;
-  padding: 0.5rem;
-  outline: none;
-  width: 100%;
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-align: left;
+  }
+  button {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: red;
+    color: $font-color;
+    font-size: $font-sm;
+    width: 100%;
+    outline: none;
+    border: ;
+  }
+  input {
+    font-size: $font-sm;
+    padding: 0.5rem;
+    outline: none;
+    width: 100%;
+  }
 }
 /* end of subscribe */
 .footer {
   height: 10rem;
-  background-color: white;
+  background-color: $font-color;
   width: 100%;
+  button {
+    padding: 1rem 2rem;
+    margin: 2rem;
+    background-color: $bk-color;
+    color: $font-color;
+    cursor: pointer;
+    font-size: $font-sm;
+    font-weight: bolder;
+  }
+  p {
+    margin: 0 0 2rem 2rem;
+    color: $bk-color;
+  }
 }
-.footer button {
-  padding: 1rem 2rem;
-  margin: 2rem;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bolder;
-}
+
 .footer-icon {
   padding-right: 1rem;
   font-weight: bolder;
 }
-.footer p {
-  margin: 0 0 2rem 2rem;
-  color: black;
-}
+
 .footer-link {
-  color: black;
+  color: $bk-color;
   text-decoration: underline;
 }
 .footer-btn-link {
-  color: white;
+  color: $font-color;
 }
 /* end of footer */
 /* page responsive part */
